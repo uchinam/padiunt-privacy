@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de Padiunt y sus videojuegos, incluido Nimals.">
+  <meta name="theme-color" content="#171923">
+  <title>Centro de privacidad | Padiunt</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202233; --muted: #62677a; --line: #e7e8ef;
+      --paper: #ffffff; --soft: #f5f5fa; --accent: #7667e8;
+      --accent-dark: #5547c4;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f1f1f7; color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--accent-dark); }
+    .shell { max-width: 900px; margin: 38px auto; padding: 0 18px 48px; }
+    header { background: #171923; color: white; border-radius: 22px 22px 0 0; padding: 30px clamp(22px, 5vw, 48px); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.13em; }
+    .mark { width:38px; height:38px; display:grid; place-items:center; border-radius:12px; background:#8c7cf5; font-size:21px; }
+    .eyebrow { color:#b9b5ff; text-transform:uppercase; letter-spacing:.14em; font-size:12px; font-weight:700; margin:30px 0 5px; }
+    h1 { font-size:clamp(30px, 5vw, 44px); line-height:1.12; margin:0 0 10px; }
+    header p { color:#d2d3df; max-width:650px; margin:0; }
+    main { background:var(--paper); padding:clamp(22px, 5vw, 48px); border-radius:0 0 22px 22px; box-shadow:0 16px 50px #25254a12; }
+    .toolbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:30px; }
+    .updated { color:var(--muted); font-size:13px; }
+    .switch { display:flex; gap:4px; padding:4px; background:var(--soft); border-radius:999px; }
+    button { border:0; border-radius:999px; padding:9px 17px; font:inherit; font-size:14px; font-weight:700; cursor:pointer; color:var(--muted); background:transparent; }
+    button[aria-pressed="true"] { background:white; color:var(--accent-dark); box-shadow:0 1px 5px #20223318; }
+    h2 { font-size:21px; margin:30px 0 8px; }
+    h3 { font-size:16px; margin:20px 0 5px; }
+    p { margin:8px 0 12px; }
+    ul { padding-left:22px; }
+    li { margin:5px 0; }
+    .notice { background:#f4f2ff; border-left:4px solid var(--accent); padding:14px 17px; border-radius:8px; margin:20px 0; }
+    .contact { background:var(--soft); border-radius:14px; padding:18px 20px; margin-top:28px; }
+    footer { text-align:center; color:var(--muted); font-size:13px; padding:20px 10px 0; }
+    [hidden] { display:none !important; }
+    @media (max-width:560px) { .shell { margin:0 auto; padding:0 0 28px; } header,main { border-radius:0; } }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div class="brand"><span class="mark" aria-hidden="true">✦</span><span>PADIUNT</span></div>
+    <div class="eyebrow" id="eyebrow">Privacidad y transparencia</div>
+    <h1 id="hero-title">Centro de privacidad</h1>
+    <p id="hero-subtitle">Información sobre cómo Padiunt trata los datos al utilizar sus videojuegos.</p>
+  </header>
+  <main>
+    <div class="toolbar">
+      <span class="updated" id="updated">Última actualización: 13 de noviembre de 2026</span>
+      <div class="switch" role="group" aria-label="Language / Idioma">
+        <button id="es-button" type="button" aria-pressed="true">Español</button>
+        <button id="en-button" type="button" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <article id="spanish">
+      <p>Esta política de privacidad explica cómo Padiunt («Padiunt», «nosotros») trata la información relacionada con sus videojuegos. Se aplica a <strong>Nimals</strong> y, cuando corresponda, a otros juegos de Padiunt que enlacen expresamente a esta política. Cada juego puede tener información complementaria si sus funciones o servicios son diferentes.</p>
+      <p><strong>Importante:</strong> Nimals no requiere crear una cuenta. El progreso de la partida se guarda localmente en el dispositivo mediante las funciones de almacenamiento de Godot; Padiunt no recibe ese archivo ni lo envía a sus propios servidores.</p>
+
+      <h2>1. Información que trata Nimals</h2>
+      <h3>Datos de la partida guardados localmente</h3>
+      <p>Nimals guarda información necesaria para conservar el progreso y permitir que la persona continúe jugando. Esta información se almacena en el dispositivo mediante <code>FileAccess</code> de Godot y no se transmite a un servidor de Padiunt. La persona puede perder ese progreso si desinstala el juego, borra sus datos o elimina los archivos locales.</p>
+      <h3>Publicidad y servicios de Google AdMob</h3>
+      <p>Nimals utiliza Google AdMob para mostrar anuncios recompensados. AdMob y sus tecnologías asociadas pueden recopilar o recibir información del dispositivo y del uso de los anuncios para prestar, medir, proteger y mejorar sus servicios, de acuerdo con la configuración del juego, las opciones de consentimiento y las políticas de Google. Esta información puede incluir, según corresponda:</p>
+      <ul>
+        <li>Dirección IP e información aproximada derivada de ella, como la ubicación general.</li>
+        <li>Identificadores relacionados con la publicidad o la aplicación.</li>
+        <li>Información del dispositivo, sistema operativo y características técnicas.</li>
+        <li>Interacciones con anuncios, impresiones, clics y eventos relacionados.</li>
+        <li>Datos de diagnóstico, rendimiento y prevención de fraude.</li>
+      </ul>
+      <p>El tipo de información tratada puede variar según el dispositivo, la región, la configuración publicitaria y las opciones de privacidad de la persona. Para más información, consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y la información de <a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">Google AdMob</a>.</p>
+
+      <h2>2. Para qué se utiliza la información</h2>
+      <p>El almacenamiento local se utiliza exclusivamente para conservar el progreso del juego. La información tratada por AdMob puede utilizarse para proporcionar y mostrar anuncios, limitar su frecuencia, medir su rendimiento, detectar actividad no válida y cumplir obligaciones legales y de privacidad aplicables.</p>
+
+      <h2>3. Consentimiento y preferencias de anuncios</h2>
+      <p>Cuando corresponda, Google puede mostrar opciones para obtener y gestionar el consentimiento relacionado con la publicidad y el uso de datos. La disponibilidad y el contenido de esas opciones dependen de la región y de los requisitos aplicables. Las preferencias también pueden gestionarse mediante los controles de privacidad y publicidad disponibles en el dispositivo o en los servicios de Google.</p>
+
+      <h2>4. Servicios de terceros y destinatarios</h2>
+      <p>Padiunt utiliza Google AdMob como proveedor de publicidad. Google y sus entidades o proveedores asociados pueden tratar información para prestar los servicios publicitarios, de medición, seguridad y diagnóstico. El tratamiento realizado por Google se rige también por sus propios términos y políticas.</p>
+
+      <h2>5. Conservación y eliminación</h2>
+      <p>Los datos de progreso permanecen en el dispositivo hasta que la persona los elimina, borra los datos de la aplicación o desinstala el juego, sujeto al funcionamiento del sistema operativo y del propio juego. Padiunt no mantiene una copia de esos datos en sus servidores.</p>
+      <p>La información tratada por Google AdMob se conserva conforme a las políticas y plazos aplicables de Google. Padiunt no controla directamente esos plazos.</p>
+
+      <h2>6. Privacidad de menores</h2>
+      <p>Nimals no está diseñado para recopilar directamente datos personales de sus jugadores mediante cuentas propias. Sin embargo, los servicios publicitarios de terceros pueden tratar información del dispositivo. La configuración de anuncios y las medidas aplicables a menores deben ajustarse a la clasificación por edades, los países de distribución y las opciones configuradas en Google Play y AdMob. Si tienes dudas sobre la privacidad de un menor en relación con Nimals, escríbenos al correo indicado abajo.</p>
+
+      <h2>7. Seguridad</h2>
+      <p>Padiunt procura limitar el tratamiento de información propia y utiliza el almacenamiento local para el progreso de Nimals. Ningún método de almacenamiento o transmisión electrónica puede garantizar seguridad absoluta. Los servicios de terceros son responsables de las medidas de seguridad aplicables a los datos que procesan bajo sus propios servicios.</p>
+
+      <h2>8. Cambios en esta política</h2>
+      <p>Podemos actualizar esta política cuando cambien Nimals, los servicios utilizados, las obligaciones legales o nuestras prácticas. Publicaremos la versión vigente en esta página e indicaremos la fecha de su última actualización.</p>
+
+      <h2>9. Contacto</h2>
+      <div class="contact">
+        <p>Si tienes preguntas o solicitudes relacionadas con esta política o la privacidad en los juegos de Padiunt, puedes escribirnos a:</p>
+        <p><strong>Correo:</strong> <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a></p>
+        <p><strong>Responsable indicado:</strong> Padiunt</p>
+      </div>
+    </article>
+
+    <article id="english" hidden>
+      <p>This Privacy Policy explains how Padiunt (“Padiunt”, “we”, “us”) handles information in connection with its games. It applies to <strong>Nimals</strong> and, where applicable, to other Padiunt games that expressly link to this policy. Individual games may provide additional information if their features or services differ.</p>
+      <p><strong>Important:</strong> Nimals does not require players to create an account. Game progress is saved locally on the device using Godot's storage functionality. Padiunt does not receive that save file or send it to its own servers.</p>
+
+      <h2>1. Information handled by Nimals</h2>
+      <h3>Game data stored locally</h3>
+      <p>Nimals saves information needed to preserve game progress and allow players to continue where they left off. This information is stored on the device using Godot's <code>FileAccess</code> functionality and is not transmitted to a Padiunt server. Progress may be lost if the game is uninstalled, its app data is cleared, or local files are deleted.</p>
+      <h3>Advertising and Google AdMob</h3>
+      <p>Nimals uses Google AdMob to display rewarded ads. AdMob and related technologies may collect or receive device and ad-usage information to provide, measure, protect, and improve their services, depending on the game's configuration, consent choices, and Google's policies. This information may include, where applicable:</p>
+      <ul>
+        <li>IP address and general information derived from it, such as approximate location.</li>
+        <li>Advertising or app-related identifiers.</li>
+        <li>Device, operating system, and technical information.</li>
+        <li>Ad interactions, impressions, clicks, and related events.</li>
+        <li>Diagnostics, performance, and fraud-prevention information.</li>
+      </ul>
+      <p>The information processed may vary depending on the device, region, advertising configuration, and the user's privacy choices. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">Google AdMob</a>.</p>
+
+      <h2>2. How information is used</h2>
+      <p>Locally stored data is used only to preserve game progress. Information processed by AdMob may be used to provide and display ads, limit ad frequency, measure ad performance, detect invalid activity, and comply with applicable legal and privacy requirements.</p>
+
+      <h2>3. Consent and advertising preferences</h2>
+      <p>Where applicable, Google may present choices to obtain and manage consent related to advertising and data use. The availability and content of these choices depend on the user's region and applicable requirements. Preferences may also be managed through privacy and advertising controls available on the device or through Google services.</p>
+
+      <h2>4. Third-party services and recipients</h2>
+      <p>Padiunt uses Google AdMob as an advertising provider. Google and its related entities or providers may process information to deliver advertising, measurement, security, and diagnostic services. Google's own terms and policies also govern its processing.</p>
+
+      <h2>5. Retention and deletion</h2>
+      <p>Game progress remains on the device until the player deletes it, clears the app's data, or uninstalls the game, subject to the operating system and game's behavior. Padiunt does not keep a copy of this data on its servers.</p>
+      <p>Information processed by Google AdMob is retained according to Google's applicable policies and retention periods. Padiunt does not directly control those periods.</p>
+
+      <h2>6. Children's privacy</h2>
+      <p>Nimals is not designed to directly collect players' personal information through Padiunt-operated accounts. However, third-party advertising services may process device information. Ad settings and measures applicable to children must be consistent with the game's age rating, distribution countries, and the settings configured in Google Play and AdMob. If you have a question about a child's privacy in connection with Nimals, contact us using the email below.</p>
+
+      <h2>7. Security</h2>
+      <p>Padiunt aims to limit its own information processing and uses local storage for Nimals game progress. No electronic storage or transmission method can guarantee absolute security. Third-party services are responsible for the security measures applicable to data they process through their services.</p>
+
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this policy when Nimals, the services it uses, legal requirements, or our practices change. The current version will be published on this page with its latest update date.</p>
+
+      <h2>9. Contact</h2>
+      <div class="contact">
+        <p>For questions or requests about this policy or privacy in Padiunt games, contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a></p>
+        <p><strong>Responsible party name:</strong> Padiunt</p>
+      </div>
+    </article>
+  </main>
+  <footer>© <span id="year">2026</span> Padiunt</footer>
+</div>
+<script>
+  const es = document.getElementById('spanish');
+  const en = document.getElementById('english');
+  const esBtn = document.getElementById('es-button');
+  const enBtn = document.getElementById('en-button');
+  const strings = {
+    es: ['Privacidad y transparencia', 'Centro de privacidad', 'Información sobre cómo Padiunt trata los datos al utilizar sus videojuegos.', 'Última actualización: 13 de noviembre de 2026', 'es'],
+    en: ['Privacy and transparency', 'Privacy Center', 'Information about how Padiunt handles data when you use its games.', 'Last updated: November 13, 2026', 'en']
+  };
+  function setLanguage(lang) {
+    const s = strings[lang];
+    es.hidden = lang !== 'es';
+    en.hidden = lang !== 'en';
+    esBtn.setAttribute('aria-pressed', String(lang === 'es'));
+    enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+    document.documentElement.lang = s[4];
+    document.getElementById('eyebrow').textContent = s[0];
+    document.getElementById('hero-title').textContent = s[1];
+    document.getElementById('hero-subtitle').textContent = s[2];
+    document.getElementById('updated').textContent = s[3];
+    document.title = s[1] + ' | Padiunt';
+    try { history.replaceState(null, '', lang === 'en' ? '#en' : '#es'); } catch (_) {}
+  }
+  esBtn.addEventListener('click', () => setLanguage('es'));
+  enBtn.addEventListener('click', () => setLanguage('en'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  setLanguage(location.hash.toLowerCase() === '#en' ? 'en' : 'es');
+</script>
+</body>
+</html>
