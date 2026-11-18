@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Política de privacidad de Padiunt y sus videojuegos, incluido Nimals.">
+  <meta name="description" content="Política de privacidad de Padiunt y sus videojuegos: Nimals y Pomu.">
   <meta name="theme-color" content="#171923">
   <title>Política de privacidad | Padiunt</title>
   <style>
@@ -16,7 +16,7 @@
     * { box-sizing: border-box; }
     body { margin: 0; background: #f1f1f7; color: var(--ink);
       font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    a { color: var(--accent-dark); }
+    a { color: var(--accent-dark); overflow-wrap: anywhere; }
     .shell { max-width: 900px; margin: 38px auto; padding: 0 18px 48px; }
     header { background: #171923; color: white; border-radius: 22px 22px 0 0; padding: 30px clamp(22px, 5vw, 48px); }
     .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.13em; }
@@ -37,6 +37,13 @@
     li { margin:5px 0; }
     .notice { background:#f4f2ff; border-left:4px solid var(--accent); padding:14px 17px; border-radius:8px; margin:20px 0; }
     .notice p { margin:0; }
+    .games { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:12px 0 8px; }
+    .game { border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+    .game h3 { margin:0 0 10px; font-size:17px; }
+    .game dl { margin:0; }
+    .game dt { color:var(--muted); font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    .game dd { margin:2px 0 10px; }
+    .game dd:last-child { margin-bottom:0; }
     .contact { background:var(--soft); border-radius:14px; padding:18px 20px; margin-top:28px; }
     footer { text-align:center; color:var(--muted); font-size:13px; padding:20px 10px 0; }
     [hidden] { display:none !important; }
@@ -53,7 +60,7 @@
   </header>
   <main>
     <div class="toolbar">
-      <span class="updated" id="updated">Última actualización: 15 de noviembre de 2026</span>
+      <span class="updated" id="updated">Última actualización: 17 de noviembre de 2026</span>
       <div class="switch" role="group" aria-label="Language / Idioma">
         <button id="es-button" type="button" aria-pressed="true">Español</button>
         <button id="en-button" type="button" aria-pressed="false">English</button>
@@ -61,31 +68,60 @@
     </div>
 
     <article id="spanish">
-      <p>Esta política de privacidad explica cómo Padiunt («Padiunt», «nosotros») trata la información relacionada con sus videojuegos. Se aplica a <strong>Nimals</strong> y, cuando corresponda, a otros juegos de Padiunt que enlacen expresamente a esta política. Cada juego puede tener información complementaria si sus funciones o servicios son diferentes.</p>
+      <p>Esta política de privacidad explica cómo Padiunt («Padiunt», «nosotros») trata la información relacionada con sus videojuegos. Se aplica a <strong>Nimals</strong> y a <strong>Pomu</strong> y, cuando corresponda, a otros juegos de Padiunt que enlacen expresamente a esta política. Cada juego puede tener información complementaria si sus funciones o servicios son diferentes.</p>
       <p>El responsable del tratamiento de los datos es Padiunt. Para cualquier consulta sobre privacidad, puedes escribirnos a <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>.</p>
 
       <div class="notice">
-        <p><strong>En resumen:</strong> Nimals no requiere crear una cuenta, y Padiunt no recibe tu partida ni tus ajustes: se guardan solo en tu dispositivo. Los anuncios los muestra Google AdMob, que trata algunos datos del dispositivo. En el Espacio Económico Europeo, el Reino Unido y Suiza, Google te pide permiso primero, y puedes cambiar tu decisión cuando quieras con el botón «Opciones de privacidad» del menú principal.</p>
+        <p><strong>En resumen:</strong> los juegos de Padiunt no requieren crear una cuenta, y Padiunt no recibe tu partida ni tus ajustes: se guardan solo en tu dispositivo. Los anuncios los muestra Google AdMob, que trata algunos datos del dispositivo. En el Espacio Económico Europeo, el Reino Unido y Suiza, Google te pide permiso primero, y puedes cambiar tu decisión cuando quieras con el botón «Opciones de privacidad» de cada juego. Las compras opcionales de Pomu se pagan con Google Play, y Padiunt nunca recibe los datos de tu tarjeta ni de otros medios de pago.</p>
       </div>
 
-      <h2>1. Información que trata Nimals</h2>
+      <h2>Cada juego, de un vistazo</h2>
+      <div class="games">
+        <section class="game" aria-label="Nimals">
+          <h3>Nimals</h3>
+          <dl>
+            <dt>Anuncios</dt>
+            <dd>Recompensados opcionales e intersticiales al terminar un tramo del viaje.</dd>
+            <dt>Compras dentro de la app</dt>
+            <dd>No tiene.</dd>
+            <dt>Opciones de privacidad</dt>
+            <dd>Botón del menú principal.</dd>
+          </dl>
+        </section>
+        <section class="game" aria-label="Pomu">
+          <h3>Pomu</h3>
+          <dl>
+            <dt>Anuncios</dt>
+            <dd>Recompensados opcionales e intersticiales entre pantallas, nunca durante una partida.</dd>
+            <dt>Compras dentro de la app</dt>
+            <dd>Opcionales: recargas y objetos de ayuda, pagados con Google Play.</dd>
+            <dt>Opciones de privacidad</dt>
+            <dd>Ventana «Ajustes» de la pantalla principal.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <h2>1. Información que tratan los juegos</h2>
       <h3>Datos guardados en tu dispositivo</h3>
-      <p>Nimals guarda en tu dispositivo el progreso de la partida y tus preferencias, como el volumen de la música y de los efectos. Esta información no se envía a ningún servidor de Padiunt. Puedes perderla si desinstalas el juego o borras sus datos desde los ajustes del dispositivo.</p>
+      <p>Los juegos guardan en tu dispositivo el progreso de la partida y tus preferencias, como la música, los efectos de sonido o el idioma. Pomu guarda además, solo mientras termina de procesarse una compra, un comprobante de Google Play (el token de la compra) para no entregarla dos veces, y lo borra en cuanto Google Play confirma la compra. Esta información no se envía a ningún servidor de Padiunt. Puedes perderla si desinstalas el juego o borras sus datos desde los ajustes del dispositivo.</p>
       <h3>Publicidad de Google AdMob</h3>
-      <p>Nimals usa Google AdMob para mostrar dos tipos de anuncios:</p>
+      <p>Nimals y Pomu usan Google AdMob para mostrar dos tipos de anuncios:</p>
       <ul>
-        <li><strong>Anuncios recompensados opcionales:</strong> solo se muestran si eliges ver uno a cambio de una recompensa en el juego, como seguir después de que destruyan tu nave o duplicar lo encontrado en una escala.</li>
-        <li><strong>Anuncios a pantalla completa (intersticiales):</strong> de vez en cuando aparece uno al terminar un tramo del viaje, antes de la escala siguiente. Nunca interrumpen la partida.</li>
+        <li><strong>Anuncios recompensados opcionales:</strong> solo se muestran si eliges ver uno a cambio de una recompensa en el juego. En Nimals, por ejemplo, para seguir después de que destruyan tu nave o duplicar lo encontrado en una escala; en Pomu, para recuperar vidas en el modo clásico, conseguir energía para una partida del modo infinito o seguir una partida del modo infinito cuando se acaba el tiempo.</li>
+        <li><strong>Anuncios a pantalla completa (intersticiales):</strong> de vez en cuando aparece uno entre dos pantallas, nunca durante una partida. En Nimals, al terminar un tramo del viaje, antes de la escala siguiente; en Pomu, después de superar algunos niveles del modo clásico o al salir de los resultados del modo infinito.</li>
       </ul>
       <p>Al abrir el juego, los servicios de Google se conectan para comprobar qué opciones de privacidad se aplican en tu región y para preparar los anuncios por adelantado, así que pueden tratar información aunque no llegues a ver ningún anuncio. Según el caso, esta información puede incluir:</p>
       <ul>
         <li>La dirección IP, que puede usarse para estimar la ubicación general del dispositivo.</li>
         <li>Identificadores del dispositivo, como el ID de publicidad de Android y el ID del conjunto de aplicaciones.</li>
         <li>Información técnica del dispositivo y del sistema operativo.</li>
-        <li>Interacciones con la app y con los anuncios, como abrir la app, toques, reproducciones de vídeo, impresiones y clics.</li>
+        <li>Interacciones con la app y con los anuncios, como abrir la app, toques, reproducciones de video, impresiones y clics.</li>
         <li>Datos de diagnóstico y rendimiento, y datos para prevenir el fraude.</li>
       </ul>
       <p>La información tratada puede variar según el dispositivo, la región, la configuración publicitaria y tus opciones de privacidad. Para más información, consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">cómo utiliza Google la información de sitios web o aplicaciones que usan sus servicios</a>.</p>
+      <h3>Compras dentro de Pomu</h3>
+      <p>Pomu ofrece compras opcionales de recargas de energía y de vidas y de objetos de ayuda. Todas se hacen con el sistema de facturación de Google Play: Google procesa el pago con la cuenta de Google que uses en Google Play y trata los datos del pago según sus propias condiciones, la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a> y el <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=es" target="_blank" rel="noopener noreferrer">Aviso de Privacidad de Google Payments</a>. Padiunt no recibe ni guarda los datos de tu tarjeta ni de otros medios de pago.</p>
+      <p>Al abrir Pomu, el juego consulta a Google Play los precios de la tienda y si quedó alguna compra por entregar. Para entregarte lo que compras, recibe de Google Play la confirmación de cada compra (el producto, su estado y un identificador de la compra) y le avisa a Google Play cuando ya te lo entregó. Además, Google pone a disposición de Padiunt, en Google Play Console, información de los pedidos, como el número de pedido, el producto, el importe, la fecha y la ubicación aproximada de la compra (por ejemplo, el país).</p>
       <h3>Si nos escribes</h3>
       <p>Si nos envías un correo, recibimos tu dirección de correo electrónico y lo que incluyas en el mensaje. Solo lo usamos para responderte.</p>
 
@@ -93,40 +129,43 @@
       <ul>
         <li><strong>Progreso y preferencias:</strong> se guardan en tu dispositivo para que puedas seguir jugando donde lo dejaste. Son necesarios para que el juego funcione y Padiunt no tiene acceso a ellos.</li>
         <li><strong>Publicidad:</strong> Google y sus socios publicitarios usan la información para mostrar los anuncios, limitar cuántas veces se repiten, medir su rendimiento, detectar actividad no válida o fraudulenta y cumplir sus obligaciones legales. En el Espacio Económico Europeo, el Reino Unido y Suiza, guardar o consultar información en tu dispositivo y mostrarte anuncios personalizados se basa en tu consentimiento. Para otros fines, como mostrar anuncios no personalizados, medir su rendimiento o prevenir el fraude, Google y sus socios pueden basarse en su interés legítimo, al que puedes oponerte desde el formulario de privacidad.</li>
+        <li><strong>Compras (Pomu):</strong> Google usa los datos del pago para cobrar, prevenir el fraude y cumplir sus obligaciones legales. Padiunt usa la confirmación de la compra para entregarte lo que compraste, y la información de los pedidos para gestionar pagos, reembolsos y obligaciones fiscales y contables. La base legal es la ejecución del contrato de compra y, para esos registros, el cumplimiento de nuestras obligaciones legales.</li>
         <li><strong>Correos:</strong> los usamos para atender tu consulta, sobre la base de nuestro interés legítimo en responderte y, si ejerces un derecho de privacidad, para cumplir nuestras obligaciones legales.</li>
       </ul>
 
       <h2>3. Consentimiento y opciones de privacidad (Google UMP)</h2>
-      <p>Cuando la normativa de tu región lo exige —por ejemplo, en el Espacio Económico Europeo, el Reino Unido y Suiza—, Nimals usa Google User Messaging Platform (UMP) para pedirte el consentimiento al abrir el juego. En ese formulario puedes aceptar, rechazar o gestionar tus opciones una a una; ahí aparece también la lista completa de socios publicitarios.</p>
+      <p>Cuando la normativa de tu región lo exige —por ejemplo, en el Espacio Económico Europeo, el Reino Unido y Suiza—, los juegos usan Google User Messaging Platform (UMP) para pedirte el consentimiento al abrirlos. En ese formulario puedes aceptar, rechazar o gestionar tus opciones una a una; ahí aparece también la lista completa de socios publicitarios.</p>
       <p>Si no das tu consentimiento, puedes jugar con normalidad; los anuncios que veas no serán personalizados.</p>
-      <p>Puedes revisar, cambiar o retirar tu consentimiento en cualquier momento con el botón <strong>«Opciones de privacidad»</strong> del menú principal de Nimals, que vuelve a abrir el formulario de Google. El botón aparece cuando la normativa de tu región lo exige, y para abrir el formulario puede hacer falta conexión a internet. Retirar el consentimiento no afecta al tratamiento realizado antes.</p>
+      <p>Puedes revisar, cambiar o retirar tu consentimiento en cualquier momento con el botón <strong>«Opciones de privacidad»</strong>, que vuelve a abrir el formulario de Google: en Nimals está en el menú principal, y en Pomu, en la ventana «Ajustes» de la pantalla principal. El botón aparece cuando la normativa de tu región lo exige, y para abrir el formulario puede hacer falta conexión a internet. Retirar el consentimiento no afecta al tratamiento realizado antes.</p>
       <p>En cualquier región puedes, además, borrar o restablecer el ID de publicidad desde los ajustes de anuncios de tu dispositivo Android y gestionar tus preferencias generales en <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Mi Centro de Anuncios de Google</a>.</p>
 
       <h2>4. Con quién se comparte la información</h2>
       <p>Padiunt usa Google AdMob como proveedor de publicidad. Google, sus entidades asociadas y los socios publicitarios que participan en sus servicios de anuncios pueden tratar información para prestar servicios de publicidad, medición, seguridad y diagnóstico. Google trata esa información conforme a sus propias condiciones y políticas. En el Espacio Económico Europeo, el Reino Unido y Suiza puedes consultar la lista de socios en el formulario de privacidad.</p>
-      <p>Aparte de lo que tratan Google y sus socios a través de AdMob, Padiunt no comparte tu información con terceros. Los correos que nos envíes se gestionan con Gmail, un servicio de Google.</p>
+      <p>Las compras de Pomu las procesa Google Play, un servicio de Google, conforme a sus propias condiciones y políticas.</p>
+      <p>Aparte de lo que tratan Google y sus socios a través de AdMob y Google Play, Padiunt no comparte tu información con terceros, salvo cuando la ley nos obligue a hacerlo. Los correos que nos envíes se gestionan con Gmail, un servicio de Google.</p>
 
       <h2>5. Transferencias internacionales</h2>
-      <p>Google y sus socios publicitarios pueden tratar la información en países distintos del tuyo, incluido Estados Unidos. Para las transferencias desde el Espacio Económico Europeo, el Reino Unido y Suiza, Google se apoya en garantías como las decisiones de adecuación, las cláusulas contractuales tipo y los marcos de privacidad de datos entre la UE y EE. UU. (con su extensión al Reino Unido) y entre Suiza y EE. UU. Puedes ver los detalles en los <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener noreferrer">marcos legales de Google para la transferencia de datos</a>.</p>
+      <p>Google —también para los pagos de Google Play— y sus socios publicitarios pueden tratar la información en países distintos del tuyo, incluido Estados Unidos. Para las transferencias desde el Espacio Económico Europeo, el Reino Unido y Suiza, Google se apoya en garantías como las decisiones de adecuación, las cláusulas contractuales tipo y los marcos de privacidad de datos entre la UE y EE. UU. (con su extensión al Reino Unido) y entre Suiza y EE. UU. Puedes ver los detalles en los <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener noreferrer">marcos legales de Google para la transferencia de datos</a>.</p>
 
       <h2>6. Conservación y eliminación</h2>
-      <p>El progreso y las preferencias permanecen en tu dispositivo hasta que desinstalas el juego o borras sus datos. Padiunt no guarda ninguna copia.</p>
-      <p>Google conserva la información de AdMob según sus propios plazos, que explica en <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">cómo conserva Google los datos que recopila</a>. Padiunt no controla esos plazos.</p>
+      <p>El progreso y las preferencias permanecen en tu dispositivo hasta que desinstalas el juego o borras sus datos. Padiunt no guarda ninguna copia. El comprobante temporal de una compra de Pomu se borra de tu dispositivo en cuanto Google Play confirma la compra.</p>
+      <p>Google conserva la información de AdMob y de los pagos de Google Play según sus propios plazos, que explica en <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">cómo conserva Google los datos que recopila</a>. Padiunt no controla esos plazos.</p>
+      <p>La información de los pedidos de Pomu está en Google Play Console. Si Padiunt la descarga para cumplir obligaciones fiscales o contables, la conserva solo el tiempo que esas obligaciones exijan.</p>
       <p>Conservamos los correos que nos envíes solo el tiempo necesario para atender tu consulta y cumplir nuestras obligaciones legales.</p>
 
       <h2>7. Tus derechos</h2>
       <p>Según la ley de tu país —por ejemplo, el Reglamento General de Protección de Datos (RGPD) en el Espacio Económico Europeo o las leyes equivalentes del Reino Unido y Suiza—, puedes tener derecho a acceder a tus datos, rectificarlos, suprimirlos, limitar su tratamiento u oponerte a él (también a la publicidad personalizada), pedir su portabilidad y retirar tu consentimiento en cualquier momento.</p>
-      <p>Padiunt no guarda datos que te identifiquen, salvo los correos que nos envíes. Para los datos de los anuncios, lo más directo es usar el botón «Opciones de privacidad», los ajustes de anuncios de tu dispositivo y las herramientas de privacidad de Google. Para cualquier otra solicitud, escríbenos a <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>; te responderemos dentro del plazo que fije la ley.</p>
+      <p>Padiunt no guarda datos que te identifiquen, salvo los correos que nos envíes y, si compras en Pomu, la información de los pedidos que nos facilita Google Play. Para los datos de los anuncios, lo más directo es usar el botón «Opciones de privacidad», los ajustes de anuncios de tu dispositivo y las herramientas de privacidad de Google. Tus compras puedes consultarlas en el <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener noreferrer">historial de pedidos de Google Play</a>. Para cualquier otra solicitud, escríbenos a <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>; te responderemos dentro del plazo que fije la ley.</p>
       <p>También tienes derecho a presentar una reclamación ante la autoridad de protección de datos de tu país.</p>
 
       <h2>8. Privacidad de menores</h2>
-      <p>Nimals está pensado para personas de 13 años o más y no está dirigido a menores de esa edad. Padiunt no recopila a sabiendas datos personales de menores de 13 años, y los anuncios del juego están limitados a contenido apto para adolescentes. Si en tu país necesitas más edad para dar tu consentimiento por tu cuenta, pide a tu madre, padre o tutor que revise contigo las opciones de privacidad. Si crees que un menor de 13 años nos ha enviado datos personales, escríbenos y los borraremos.</p>
+      <p>Nimals y Pomu están pensados para personas de 13 años o más y no están dirigidos a menores de esa edad. Padiunt no recopila a sabiendas datos personales de menores de 13 años. Los anuncios de Nimals están limitados a contenido apto para adolescentes, y los de Pomu, a contenido apto para la mayoría del público con orientación de los padres. Si en tu país necesitas más edad para dar tu consentimiento por tu cuenta, pide a tu madre, padre o tutor que revise contigo las opciones de privacidad. Las compras de Pomu se hacen con la cuenta de Google Play del dispositivo, y quien la administre puede <a href="https://support.google.com/googleplay/answer/1626831?hl=es" target="_blank" rel="noopener noreferrer">exigir autenticación para cada compra</a>. Si crees que un menor de 13 años nos ha enviado datos personales, escríbenos y los borraremos.</p>
 
       <h2>9. Seguridad</h2>
-      <p>Padiunt reduce al mínimo la información que trata: Nimals no tiene cuentas y no envía tu partida ni tus ajustes a ningún servidor. Según Google, los datos que recopila su SDK de anuncios se cifran durante la transmisión. Aun así, ningún método de almacenamiento o transmisión electrónica es completamente seguro. Cada servicio de terceros es responsable de la seguridad de los datos que trata.</p>
+      <p>Padiunt reduce al mínimo la información que trata: sus juegos no tienen cuentas ni envían tu partida o tus ajustes a ningún servidor, y los pagos de Pomu los procesa Google Play sin que Padiunt reciba los datos de pago. Según Google, los datos que recopila su SDK de anuncios se cifran durante la transmisión. Aun así, ningún método de almacenamiento o transmisión electrónica es completamente seguro. Cada servicio de terceros es responsable de la seguridad de los datos que trata.</p>
 
       <h2>10. Cambios en esta política</h2>
-      <p>Podemos actualizar esta política cuando cambien Nimals, los servicios utilizados, las obligaciones legales o nuestras prácticas. Publicaremos la versión vigente en esta página e indicaremos la fecha de su última actualización.</p>
+      <p>Podemos actualizar esta política cuando cambien nuestros juegos, los servicios que utilizan, las obligaciones legales o nuestras prácticas. Publicaremos la versión vigente en esta página e indicaremos la fecha de su última actualización.</p>
 
       <h2>11. Contacto</h2>
       <div class="contact">
@@ -136,22 +175,48 @@
       </div>
     </article>
 
-    <article id="english" hidden>
-      <p>This Privacy Policy explains how Padiunt (“Padiunt”, “we”, “us”) handles information in connection with its games. It applies to <strong>Nimals</strong> and, where applicable, to other Padiunt games that expressly link to this policy. Individual games may provide additional information if their features or services differ.</p>
+    <article id="english" lang="en" hidden>
+      <p>This Privacy Policy explains how Padiunt (“Padiunt”, “we”, “us”) handles information in connection with its games. It applies to <strong>Nimals</strong> and <strong>Pomu</strong> and, where applicable, to other Padiunt games that expressly link to this policy. Individual games may provide additional information if their features or services differ.</p>
       <p>The data controller is Padiunt. For any privacy question, you can contact us at <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>.</p>
 
       <div class="notice">
-        <p><strong>In short:</strong> Nimals does not require an account, and Padiunt does not receive your game progress or settings: they are stored only on your device. Ads are served by Google AdMob, which processes some device data. In the European Economic Area, the United Kingdom, and Switzerland, Google asks for your permission first, and you can change your choice at any time with the “Privacy Options” button in the main menu.</p>
+        <p><strong>In short:</strong> Padiunt games do not require an account, and Padiunt does not receive your game progress or settings: they are stored only on your device. Ads are served by Google AdMob, which processes some device data. In the European Economic Area, the United Kingdom, and Switzerland, Google asks for your permission first, and you can change your choice at any time with each game's “Privacy Options” button. Optional purchases in Pomu are paid through Google Play, and Padiunt never receives your card or other payment details.</p>
       </div>
 
-      <h2>1. Information handled by Nimals</h2>
+      <h2>Each game at a glance</h2>
+      <div class="games">
+        <section class="game" aria-label="Nimals">
+          <h3>Nimals</h3>
+          <dl>
+            <dt>Ads</dt>
+            <dd>Optional rewarded ads, and interstitials when you finish a stage of the journey.</dd>
+            <dt>In-app purchases</dt>
+            <dd>None.</dd>
+            <dt>Privacy options</dt>
+            <dd>Button in the main menu.</dd>
+          </dl>
+        </section>
+        <section class="game" aria-label="Pomu">
+          <h3>Pomu</h3>
+          <dl>
+            <dt>Ads</dt>
+            <dd>Optional rewarded ads, and interstitials between screens, never during a game.</dd>
+            <dt>In-app purchases</dt>
+            <dd>Optional refills and helper items, paid through Google Play.</dd>
+            <dt>Privacy options</dt>
+            <dd>“Settings” window on the main screen.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <h2>1. Information handled by the games</h2>
       <h3>Data stored on your device</h3>
-      <p>Nimals stores your game progress and preferences, such as music and sound effects volume, on your device. This information is not sent to any Padiunt server. You may lose it if you uninstall the game or clear its data in your device settings.</p>
+      <p>The games store your game progress and preferences, such as music, sound effects, or language, on your device. Pomu also stores, only while a purchase is being completed, a Google Play receipt (the purchase token) so that it is never delivered twice, and deletes it as soon as Google Play confirms the purchase. This information is not sent to any Padiunt server. You may lose it if you uninstall the game or clear its data in your device settings.</p>
       <h3>Advertising with Google AdMob</h3>
-      <p>Nimals uses Google AdMob to show two kinds of ads:</p>
+      <p>Nimals and Pomu use Google AdMob to show two kinds of ads:</p>
       <ul>
-        <li><strong>Optional rewarded ads:</strong> they are only shown if you choose to watch one in exchange for an in-game reward, such as continuing after your ship is destroyed or doubling what you found at a stopover.</li>
-        <li><strong>Full-screen (interstitial) ads:</strong> from time to time, one appears when you finish a stage of the journey, before the next stopover. They never interrupt gameplay.</li>
+        <li><strong>Optional rewarded ads:</strong> they are only shown if you choose to watch one in exchange for an in-game reward. In Nimals, for example, to continue after your ship is destroyed or to double what you found at a stopover; in Pomu, to get lives back in classic mode, to get energy for an endless-mode game, or to keep an endless-mode game going when time runs out.</li>
+        <li><strong>Full-screen (interstitial) ads:</strong> from time to time, one appears between two screens, never during a game. In Nimals, when you finish a stage of the journey, before the next stopover; in Pomu, after you beat some classic-mode levels or when you leave the endless-mode results.</li>
       </ul>
       <p>When you open the game, Google's services connect to check which privacy options apply in your region and to load ads in advance, so they may process information even if you never watch an ad. Depending on the case, this information may include:</p>
       <ul>
@@ -162,6 +227,9 @@
         <li>Diagnostic and performance data, and fraud-prevention data.</li>
       </ul>
       <p>The information processed may vary depending on the device, region, ad settings, and your privacy choices. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.</p>
+      <h3>Purchases in Pomu</h3>
+      <p>Pomu offers optional purchases of energy and life refills and of helper items. All of them use Google Play's billing system: Google processes the payment with the Google Account you use on Google Play and handles payment data under its own terms, <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>, and the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=en" target="_blank" rel="noopener noreferrer">Google Payments Privacy Notice</a>. Padiunt does not receive or store your card or other payment details.</p>
+      <p>When you open Pomu, the game asks Google Play for the shop prices and whether any purchase is still waiting to be delivered. To deliver what you buy, it receives a confirmation of each purchase from Google Play (the product, its status, and a purchase identifier) and tells Google Play once the item has been delivered. Google also makes order information available to Padiunt in Google Play Console, such as the order number, product, amount, date, and the approximate location of the purchase (for example, the country).</p>
       <h3>If you contact us</h3>
       <p>If you email us, we receive your email address and whatever you include in your message. We only use it to reply to you.</p>
 
@@ -169,40 +237,43 @@
       <ul>
         <li><strong>Progress and preferences:</strong> stored on your device so you can continue where you left off. They are necessary for the game to work, and Padiunt has no access to them.</li>
         <li><strong>Advertising:</strong> Google and its advertising partners use the information to serve ads, limit how often they repeat, measure their performance, detect invalid or fraudulent activity, and meet their legal obligations. In the European Economic Area, the United Kingdom, and Switzerland, storing or accessing information on your device and showing you personalized ads are based on your consent. For other purposes, such as serving non-personalized ads, measuring ad performance, or preventing fraud, Google and its partners may rely on their legitimate interests, which you can object to in the privacy form.</li>
+        <li><strong>Purchases (Pomu):</strong> Google uses payment data to charge you, prevent fraud, and meet its legal obligations. Padiunt uses the purchase confirmation to deliver what you bought, and order information to handle payments, refunds, and tax and accounting obligations. The legal basis is the performance of the purchase contract and, for those records, compliance with our legal obligations.</li>
         <li><strong>Emails:</strong> we use them to handle your request, based on our legitimate interest in replying to you and, if you exercise a privacy right, to meet our legal obligations.</li>
       </ul>
 
       <h2>3. Consent and privacy options (Google UMP)</h2>
-      <p>Where required by the rules in your region —for example, in the European Economic Area, the United Kingdom, and Switzerland— Nimals uses Google User Messaging Platform (UMP) to ask for your consent when you open the game. In that form you can accept, decline, or manage your options one by one (“Manage options”), where the full list of advertising partners is also shown.</p>
+      <p>Where required by the rules in your region —for example, in the European Economic Area, the United Kingdom, and Switzerland— the games use Google User Messaging Platform (UMP) to ask for your consent when you open them. In that form you can accept, decline, or manage your options one by one (“Manage options”), where the full list of advertising partners is also shown.</p>
       <p>If you do not consent, you can still play normally; the ads you see will not be personalized.</p>
-      <p>You can review, change, or withdraw your consent at any time with the <strong>“Privacy Options”</strong> button in the Nimals main menu (“Opciones de privacidad” if you play in Spanish), which reopens Google's form. The button appears where the rules in your region require it, and opening the form may require an internet connection. Withdrawing consent does not affect processing carried out before.</p>
+      <p>You can review, change, or withdraw your consent at any time with the <strong>“Privacy Options”</strong> button (“Opciones de privacidad” if you play in Spanish), which reopens Google's form: in Nimals it is in the main menu, and in Pomu, in the “Settings” window on the main screen. The button appears where the rules in your region require it, and opening the form may require an internet connection. Withdrawing consent does not affect processing carried out before.</p>
       <p>In any region, you can also delete or reset your advertising ID in your Android device's ad settings, and manage your general preferences in <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google My Ad Center</a>.</p>
 
       <h2>4. Who information is shared with</h2>
       <p>Padiunt uses Google AdMob as its advertising provider. Google, its affiliates, and the advertising partners that take part in its ad services may process information to provide advertising, measurement, security, and diagnostic services. Google processes this information under its own terms and policies. In the European Economic Area, the United Kingdom, and Switzerland, you can see the list of partners in the privacy form.</p>
-      <p>Apart from what Google and its partners process through AdMob, Padiunt does not share your information with third parties. Emails you send us are handled with Gmail, a Google service.</p>
+      <p>Purchases in Pomu are processed by Google Play, a Google service, under its own terms and policies.</p>
+      <p>Apart from what Google and its partners process through AdMob and Google Play, Padiunt does not share your information with third parties, except where the law requires us to. Emails you send us are handled with Gmail, a Google service.</p>
 
       <h2>5. International transfers</h2>
-      <p>Google and its advertising partners may process information in countries other than yours, including the United States. For transfers from the European Economic Area, the United Kingdom, and Switzerland, Google relies on safeguards such as adequacy decisions, standard contractual clauses, and the EU-U.S. Data Privacy Framework (with its UK Extension) and the Swiss-U.S. Data Privacy Framework. See <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener noreferrer">Google's legal frameworks for data transfers</a> for details.</p>
+      <p>Google —including for Google Play payments— and its advertising partners may process information in countries other than yours, including the United States. For transfers from the European Economic Area, the United Kingdom, and Switzerland, Google relies on safeguards such as adequacy decisions, standard contractual clauses, and the EU-U.S. Data Privacy Framework (with its UK Extension) and the Swiss-U.S. Data Privacy Framework. See <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener noreferrer">Google's legal frameworks for data transfers</a> for details.</p>
 
       <h2>6. Retention and deletion</h2>
-      <p>Game progress and preferences stay on your device until you uninstall the game or clear its data. Padiunt does not keep a copy.</p>
-      <p>Google retains AdMob information according to its own retention periods, explained in <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">How Google retains data we collect</a>. Padiunt does not control those periods.</p>
+      <p>Game progress and preferences stay on your device until you uninstall the game or clear its data. Padiunt does not keep a copy. The temporary receipt of a Pomu purchase is deleted from your device as soon as Google Play confirms the purchase.</p>
+      <p>Google retains AdMob and Google Play payment information according to its own retention periods, explained in <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">How Google retains data we collect</a>. Padiunt does not control those periods.</p>
+      <p>Pomu order information is kept in Google Play Console. If Padiunt downloads it to meet tax or accounting obligations, we keep it only as long as those obligations require.</p>
       <p>We keep emails you send us only as long as needed to handle your request and meet our legal obligations.</p>
 
       <h2>7. Your rights</h2>
       <p>Depending on the law in your country —for example, the General Data Protection Regulation (GDPR) in the European Economic Area, or the equivalent laws in the United Kingdom and Switzerland— you may have the right to access, correct, or delete your data, restrict or object to its processing (including for personalized advertising), request data portability, and withdraw your consent at any time.</p>
-      <p>Padiunt does not keep data that identifies you, except emails you send us. For advertising data, the most direct options are the “Privacy Options” button, your device's ad settings, and Google's privacy tools. For any other request, email us at <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>; we will reply within the time required by law.</p>
+      <p>Padiunt does not keep data that identifies you, except emails you send us and, if you buy something in Pomu, the order information Google Play provides to us. For advertising data, the most direct options are the “Privacy Options” button, your device's ad settings, and Google's privacy tools. You can review your purchases in your <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener noreferrer">Google Play order history</a>. For any other request, email us at <a href="mailto:proomdarou@gmail.com">proomdarou@gmail.com</a>; we will reply within the time required by law.</p>
       <p>You also have the right to lodge a complaint with the data protection authority in your country.</p>
 
       <h2>8. Children's privacy</h2>
-      <p>Nimals is intended for people aged 13 and over and is not directed at children under that age. Padiunt does not knowingly collect personal information from children under 13, and ads in the game are limited to content suitable for teens. If your country requires you to be older to give consent on your own, ask a parent or guardian to review the privacy options with you. If you believe a child under 13 has sent us personal information, contact us and we will delete it.</p>
+      <p>Nimals and Pomu are intended for people aged 13 and over and are not directed at children under that age. Padiunt does not knowingly collect personal information from children under 13. Ads in Nimals are limited to content suitable for teens, and ads in Pomu to content suitable for most audiences with parental guidance. If your country requires you to be older to give consent on your own, ask a parent or guardian to review the privacy options with you. Purchases in Pomu are made with the device's Google Play account, and whoever manages that account can <a href="https://support.google.com/googleplay/answer/1626831?hl=en" target="_blank" rel="noopener noreferrer">require authentication for every purchase</a>. If you believe a child under 13 has sent us personal information, contact us and we will delete it.</p>
 
       <h2>9. Security</h2>
-      <p>Padiunt keeps the information it handles to a minimum: Nimals has no accounts and does not send your progress or settings to any server. According to Google, the data collected by its ads SDK is encrypted in transit. Even so, no electronic storage or transmission method is completely secure. Each third-party service is responsible for the security of the data it processes.</p>
+      <p>Padiunt keeps the information it handles to a minimum: its games have no accounts and do not send your progress or settings to any server, and Pomu payments are processed by Google Play without Padiunt receiving any payment details. According to Google, the data collected by its ads SDK is encrypted in transit. Even so, no electronic storage or transmission method is completely secure. Each third-party service is responsible for the security of the data it processes.</p>
 
       <h2>10. Changes to this policy</h2>
-      <p>We may update this policy when Nimals, the services it uses, legal requirements, or our practices change. The current version will be published on this page with its latest update date.</p>
+      <p>We may update this policy when our games, the services they use, legal requirements, or our practices change. The current version will be published on this page with its latest update date.</p>
 
       <h2>11. Contact</h2>
       <div class="contact">
@@ -220,8 +291,8 @@
   const esBtn = document.getElementById('es-button');
   const enBtn = document.getElementById('en-button');
   const strings = {
-    es: ['Privacidad y transparencia', 'Política de privacidad', 'Información sobre cómo Padiunt trata los datos al utilizar sus videojuegos.', 'Última actualización: 15 de noviembre de 2026', 'es'],
-    en: ['Privacy and transparency', 'Privacy Policy', 'Information about how Padiunt handles data when you use its games.', 'Last updated: November 15, 2026', 'en']
+    es: ['Privacidad y transparencia', 'Política de privacidad', 'Información sobre cómo Padiunt trata los datos al utilizar sus videojuegos.', 'Última actualización: 17 de noviembre de 2026', 'es'],
+    en: ['Privacy and transparency', 'Privacy Policy', 'Information about how Padiunt handles data when you use its games.', 'Last updated: November 17, 2026', 'en']
   };
   function setLanguage(lang) {
     const s = strings[lang];
@@ -237,10 +308,19 @@
     document.title = s[1] + ' | Padiunt';
     try { history.replaceState(null, '', lang === 'en' ? '#en' : '#es'); } catch (_) {}
   }
+  // Manda el #es o #en del enlace (Pomu abre la pagina en el idioma del
+  // juego). Sin el, como en los juegos: espanol si el navegador lo prefiere y,
+  // si no, ingles.
+  function initialLanguage() {
+    const hash = location.hash.toLowerCase();
+    if (hash === '#es' || hash === '#en') return hash.slice(1);
+    const preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'es';
+    return String(preferred).toLowerCase().startsWith('es') ? 'es' : 'en';
+  }
   esBtn.addEventListener('click', () => setLanguage('es'));
   enBtn.addEventListener('click', () => setLanguage('en'));
   document.getElementById('year').textContent = new Date().getFullYear();
-  setLanguage(location.hash.toLowerCase() === '#en' ? 'en' : 'es');
+  setLanguage(initialLanguage());
 </script>
 </body>
 </html>
